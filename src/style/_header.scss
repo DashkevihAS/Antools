@@ -1,0 +1,39 @@
+.header {
+  padding: 26px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 64px;
+  }
+  &__logo-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: $textWhite;
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+  }
+  &__auth-login {
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.78);
+    opacity: 0.78;
+  }
+  &__auth-signup {
+    width: 118px;
+    height: 48px;
+    background: #ff6e30;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #fdf5ff;
+  }
+}
