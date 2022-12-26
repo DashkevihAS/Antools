@@ -1,0 +1,9 @@
+.slider {
+  margin-bottom: 250px;
+  &__container {
+    min-height: 600px;
+
+    background-image: url('./img/backSlider.png');
+    background-repeat: no-repeat;
+  }
+}

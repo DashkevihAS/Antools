@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  gap: 8px;
+  &__item {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link {
+    color: white;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: $buttonColor;
+    }
+  }
+}

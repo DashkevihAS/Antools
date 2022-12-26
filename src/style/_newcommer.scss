@@ -1,0 +1,20 @@
+.newcommer {
+  margin-bottom: 200px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__description {
+    padding-top: 20px;
+  }
+  &__subheader {
+    margin-bottom: 60px;
+  }
+  &__catolog {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 288px);
+    justify-content: center;
+    gap: 50px 24px;
+  }
+}

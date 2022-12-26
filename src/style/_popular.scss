@@ -1,0 +1,29 @@
+.popular {
+  margin-bottom: 200px;
+  &__subheader {
+    margin-bottom: 110px;
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 390px);
+    justify-content: center;
+    gap: 100px 25px;
+    margin-bottom: 100px;
+  }
+  &__load {
+    margin: 0 auto;
+    width: 184px;
+    height: 64px;
+    background: #1e252b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $buttonColor;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
