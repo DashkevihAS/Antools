@@ -2,10 +2,25 @@
   width: 100%;
   margin-bottom: 200px;
   &__container {
+    position: relative;
     min-height: 253px;
     padding: 55px 83px;
     border-radius: 25px;
-    background-image: url('./img/backBrands.png');
+    background-image: url('./img/backBrands.svg');
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -84px;
+      left: -86px;
+      width: 159px;
+      height: 159px;
+      border-radius: 50%;
+      background: rgba(255, 72, 66, 0.4);
+      filter: blur(50px);
+    }
   }
   &__title {
     text-align: center;

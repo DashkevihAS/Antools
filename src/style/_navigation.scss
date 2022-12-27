@@ -8,18 +8,14 @@
     font-weight: 500;
     cursor: pointer;
     flex: 1 0 auto;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: $buttonColor;
+    }
     &_popup {
       position: relative;
-      padding-right: 20px;
-      &::after {
-        content: '';
-        display: block;
-        width: 18px;
-        height: 18px;
-        position: absolute;
-        top: 5px;
-        right: 0;
-        background-image: url('./img/chevron-down.svg');
+      svg {
+        transform: translateY(5px);
       }
     }
   }

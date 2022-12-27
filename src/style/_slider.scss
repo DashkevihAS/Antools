@@ -1,9 +1,45 @@
 .slider {
   margin-bottom: 250px;
   &__container {
+    position: relative;
     min-height: 600px;
-
-    background-image: url('./img/backSlider.png');
-    background-repeat: no-repeat;
+  }
+  &__dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  &__dot {
+    width: 44px;
+    height: 6px;
+    background-color: #283036;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  &__dot.active {
+    background-color: $buttonColor;
+  }
+  &__arrow-next,
+  &__arrow-prev {
+    position: absolute;
+    top: 222px;
+    color: white;
+    opacity: 0.28;
+    transition: 0.3s ease-in-out;
+    &:hover {
+      color: $buttonColor;
+      opacity: 1;
+    }
+  }
+  &__arrow-prev {
+    left: 16px;
+  }
+  &__arrow-next {
+    right: 16px;
   }
 }
