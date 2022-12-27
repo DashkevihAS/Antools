@@ -28,6 +28,7 @@
   &__arrow-prev {
     position: absolute;
     top: 222px;
+    z-index: 100;
     color: white;
     opacity: 0.28;
     transition: 0.3s ease-in-out;
@@ -42,4 +43,23 @@
   &__arrow-next {
     right: 16px;
   }
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  bottom: 0 !important;
+}
+.swiper-pagination-bullet {
+  display: block;
+  width: 44px;
+  height: 6px;
+  background-color: #283036;
+  border-radius: 4px;
+  margin-right: 18px;
+}
+.swiper-pagination-bullet-active {
+  background-color: $buttonColor;
 }
